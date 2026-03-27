@@ -1,0 +1,181 @@
+/* Global Styles */
+body {  
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+    color: #333;
+    text-align: center;
+}
+
+ h2 {color:hsl(240, 100%, 50%);
+}
+
+ h3 {color:hsl(240, 100%, 50%);
+}
+
+.navbar {
+  display: flex;
+  justify-content: flex-end; /* This pushes the items to the right */
+  background-color: #333;
+  padding: 10px;
+ }
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links li a {
+  color:hsl(0, 60%, 50%);
+  font-size:23px;
+  text-decoration: none;
+  
+}
+nav a:hover {
+  color: black; /* Change color on hover */
+  background-color: lightgray; /* Optional: Change background color */
+}
+
+li {
+  display: inline;
+  list-style-type: none;
+  margin: 10px;
+  padding: 10px;
+  align-items:Right;
+}
+
+/* Header Styling */
+.header {
+    background-color:#3c3c3c;
+    color:hsl(0, 60%, 50%);
+    padding: 20px;
+    display: flex-end;
+    align-items:center;
+    justify-content: center;
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+    margin-right: 15px;
+}
+.gallery {
+    display: grid; /* Enables Grid Layout */
+    grid-template-columns: repeat(3, 1fr); /* 3 columns of equal width */
+    gap: 10px;
+}
+
+.gallery img {
+    width: 100%; /* Makes images fill their grid cells */
+    height: 400px; /* Fixed height */
+    object-fit: cover; /* Ensures images don’t get stretched */
+}
+
+
+img {
+    max-width:450px;
+    height: 500px;
+    object-fit: cover; 
+}
+  table {  
+            width: 50%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px 12px;
+            text-align: center;
+            background-color:hsl(0, 100%, 100%);
+        }
+        th {
+            background-color:hsl(0, 100%, 100%);}
+
+.container {
+    display: flex;
+    justify-content: center; /* Centers horizontally */
+    align-items: center;
+}
+
+/* About Section */
+.about {
+    background-color: white;
+    padding: 40px;
+    margin: 20px auto;
+    width: 80%;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+
+/* Footer Styling */
+.footer {
+    background-color:#3c3c3c;
+    color:hsl(0, 60%, 50%);
+    padding: 15px;
+    position: relative;
+    width: 100%;
+}
+
+.footer a {
+    color:hsl(0, 60%, 50%) ;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .about {
+        width: 90%;
+        padding: 20px;
+    }
+}
+
+/* Inquiry Form Styles */
+.inquiry-form {
+    background: white;
+    padding: 30px;
+    width: 500px;
+    border: 2px solid black;
+    border-radius: 8px;
+    margin: 20px auto;
+}
+
+.inquiry-form input[type="text"],
+.inquiry-form input[type="email"],
+.inquiry-form input[type="tel"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+}
+
+.inquiry-form textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    height: 120px;
+    box-sizing: border-box;
+}
+
+.inquiry-form button[type="submit"] {
+    background-color: hsl(0, 60%, 50%);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.inquiry-form button[type="submit"]:hover {
+    background-color: #cc0000;
+}
